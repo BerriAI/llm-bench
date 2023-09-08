@@ -1,8 +1,8 @@
 <h1 align="center">
-        LLM-Bench powered by 🚅 LiteLLM
+        LLM-Bench
     </h1>
     <p align="center">
-        <p align="center">Call all LLM APIs using the OpenAI format [Anthropic, Huggingface, Cohere, TogetherAI, Azure, OpenAI, etc.]</p>
+        <p align="center">Benchmark LLMs response, cost and response time</p>
     </p>
 
 <h4 align="center">
@@ -22,11 +22,50 @@
     <a href="https://www.ycombinator.com/companies/berriai">
         <img src="https://img.shields.io/badge/Y%20Combinator-W23-orange?style=flat-square" alt="Y Combinator W23">
     </a>
+
+        
+<img width="1280" alt="Screenshot 2023-09-07 at 8 54 26 PM" src="https://github.com/BerriAI/litellm/assets/29436595/cfcc0a3c-5395-4976-8e3c-5e2e328ce88b">
 </h4>
 
-<img width="1280" alt="Screenshot 2023-09-07 at 8 54 26 PM" src="https://github.com/BerriAI/litellm/assets/29436595/cfcc0a3c-5395-4976-8e3c-5e2e328ce88b">
+**🤝 Schedule a 1-on-1 Session:** Book a [1-on-1 session](https://calendly.com/d/4mp-gd3-k5k/litellm-1-1-onboarding-chat) with Krrish and Ishaan, the founders, to discuss any issues, provide feedback, or explore how we can improve LiteLLM for you.
 
-## Usage
+## Setup:
+```
+git clone https://github.com/BerriAI/litellm
+```
+cd to `benchmark` dir
+```
+cd litellm/benchmark
+```
+
+### Install Dependencies
+```
+pip install litellm click tqdm tabulate termcolor
+```
+
+### Configuration
+In `benchmark/benchmark.py` select your LLMs, LLM API Key and questions
+
+Supported LLMs: https://docs.litellm.ai/docs/providers
+
+```python
+# Define the list of models to benchmark
+models = ['gpt-3.5-turbo', 'togethercomputer/llama-2-70b-chat', 'claude-2']
+
+# Enter LLM API keys
+os.environ['OPENAI_API_KEY'] = ""
+os.environ['ANTHROPIC_API_KEY'] = ""
+os.environ['TOGETHERAI_API_KEY'] = ""
+
+# List of questions to benchmark (replace with your questions)
+questions = [
+    "When will BerriAI IPO?",
+    "When will LiteLLM hit $100M ARR?"
+]
+
+```
+
+## Run LLM-Bench
 ```
 python3 benchmark.py
 ```
