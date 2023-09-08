@@ -23,11 +23,14 @@
         <img src="https://img.shields.io/badge/Y%20Combinator-W23-orange?style=flat-square" alt="Y Combinator W23">
     </a>
 
-        
-<img width="1280" alt="Screenshot 2023-09-07 at 8 54 26 PM" src="https://github.com/BerriAI/litellm/assets/29436595/cfcc0a3c-5395-4976-8e3c-5e2e328ce88b">
+<img width="1156" alt="Screenshot 2023-09-08 at 6 31 55 AM" src="https://github.com/BerriAI/llm-bench/assets/29436595/a6bb946b-6b53-42ff-901b-8b5bf67a3252">
 </h4>
 
-**🤝 Schedule a 1-on-1 Session:** Book a [1-on-1 session](https://calendly.com/d/4mp-gd3-k5k/litellm-1-1-onboarding-chat) with Krrish and Ishaan, the founders, to discuss any issues, provide feedback, or explore how we can improve LiteLLM for you.
+
+Easily benchmark LLMs for a given question by viewing 
+* Responses 
+* Response Cost
+* Response Time
 
 ## Setup:
 ```
@@ -99,4 +102,7 @@ Benchmark Results for 'When will BerriAI IPO?':
 |                 | plans or strategies.                                                             |                           |            |
 +-----------------+----------------------------------------------------------------------------------+---------------------------+------------+
 ```
+
+## Support
+**🤝 Schedule a 1-on-1 Session:** Book a [1-on-1 session](https://calendly.com/d/4mp-gd3-k5k/litellm-1-1-onboarding-chat) with Krrish and Ishaan, the founders, to discuss any issues, provide feedback, or explore how we can improve LiteLLM for you.
 
